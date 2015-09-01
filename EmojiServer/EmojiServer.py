@@ -17,8 +17,6 @@ else:
 	print('What OS ? Please add the browser manually')
 	sysexit()
 
-
-# In Windows, set browser to empty to use default browser
 PORT = 8001
 
 ######## PROGRAM
