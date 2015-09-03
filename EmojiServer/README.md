@@ -1,11 +1,11 @@
 # Emoji Server
 
-A simple script that helps you run [muan/emoji](https://github.com/muan/emoji) offline.
+A simple script that helps you refer to Github emojis offline. It uses the excellent [http://emoji.muan.co](http://emoji.muan.co) and runs it on localhost.
 
 
 ## Setting Up
 
-* Download zip(source) from [muan/emoji](https://github.com/muan/emoji). Place it in the same folder as `EmojiServer.py`. That is, EmojiServer.py and index.html should be in the same folder.
+* [Download zip](https://github.com/muan/emoji/archive/gh-pages.zip) from [muan/emoji](https://github.com/muan/emoji). Place it in the same folder as `EmojiServer.py`. That is, EmojiServer.py and index.html should be in the same folder.
 
 
 ## Using
