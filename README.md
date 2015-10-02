@@ -2,7 +2,7 @@
 
 Little python scripts I made to make my life easier.
 
-*Note* - All my code is for Python 3.
+**Note** - All my code is for Python 3.
 
 
 ### Contents
