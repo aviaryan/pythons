@@ -36,3 +36,5 @@ ABC 11
 The script does this. (Arghh)
 
 And it works for both files and folders.
+
+**NOTE** - It's safe to try the script, it asks a confirmation before actually renaming the files.
