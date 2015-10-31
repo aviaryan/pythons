@@ -50,7 +50,7 @@ for i in dic:
 # done
 # now delete source files
 
-confirm = input('#################\nDelete source files (y/n) ?').lower()
+confirm = input('Delete source files (y/n) ?\n> ').lower()
 
 if confirm == 'y':
 	for i in dic:
