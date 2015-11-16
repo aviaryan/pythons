@@ -5,6 +5,7 @@ from platform import subprocess
 
 # if genlist = 0, then this script downloads the files, the cmd_downloader variable comes into play
 # if genlist = 1, then this script generates a list.txt file containing direct links in the working directory
+# the list.txt can be imported in any download managers like IDM , FDM etc to download all files at once with full speed
 genlist = 1
 cmd_downloader = 'aria2c -x 8 -s 8 -k 3M'
 
