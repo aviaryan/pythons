@@ -17,3 +17,8 @@ Little python scripts I made to make my life easier.
 #### Others
 
 * [AudioVideoAutoMerge](Others/AudioVideoAutoMerge.py) - A very raw script to auto-merge all audio-video streams contained in a folder. It automatically detects pairs of audio-video files and merges them using *ffmpeg*.
+
+
+## Need Help ?
+
+* Ping me on [Twitter](http://twitter.com/aviaryan123) or [open an issue](https://github.com/aviaryan/pythons/issues/new)
