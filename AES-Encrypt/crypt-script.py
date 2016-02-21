@@ -1,4 +1,5 @@
 from Crypto.Cipher import AES
+import base64
 
 
 class MyAES():
@@ -15,24 +16,15 @@ class MyAES():
 		returns encrypted data in bytes
 		'''
 		obj = AES.new(self.key, AES.MODE_CFB, self.iv)
-		return obj.encrypt(msg)
+		return base64.b64encode(obj.encrypt(msg))
 
 	def decrypt(self, msg):
 		'''
-		msg - Encrypted byte-string / List of integers / String representation of list of integers like [93, 43]
-		returns string in utf-8
+		msg - Encrypted string
+		returns decrypted string in bytes
 		'''
 		obj = AES.new(self.key, AES.MODE_CFB, self.iv)
-		return obj.decrypt( self.getBytesFromStringList(msg).decode(encoding='utf-8') )
-
-	def getBytesFromStringList(self, msg):
-		if str(type(msg)).lower().find('bytes') > -1: # is bytes
-			return msg
-		if str(type(msg)).lower().find('list') > -1: # is list of ints
-			return bytes(msg)
-		msg = msg[1:-1]
-		ls = list( msg.split(',') )
-		return bytes([int(i) for i in ls])
+		return obj.decrypt(base64.b64decode(msg))
 
 
 def run():
@@ -49,9 +41,9 @@ def run():
 	what = input()
 
 	if what.lower() == 'e':
-		print( list(MyAES(pwd).encrypt(msg)) )
+		print( MyAES(pwd).encrypt(msg).decode(encoding='utf-8', errors='ignore') )
 	else:
-		print( MyAES(pwd).decrypt(msg) )
+		print( MyAES(pwd).decrypt(msg).decode(encoding='utf-8', errors='ignore') )
 
 
 if __name__ == '__main__':
