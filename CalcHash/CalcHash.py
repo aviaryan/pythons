@@ -17,7 +17,7 @@ def run(file):
 def printHash(file):
 	with open(file, "rb") as readfile:
 		data = readfile.read()
-		print(hashlib.sha256(data).hexdigest())
+		print(hashlib.sha256(data).hexdigest(), '*', file)
 
 
 if __name__ == '__main__':
