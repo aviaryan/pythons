@@ -12,6 +12,7 @@ Little python scripts I made to make my life easier.
 * [Name Order Fixer](NameOrderFix) - Pads zeros in numbers of filenames to make them uniform
 * [anime.thehylia soundtrack downloader](TheHyliaSoundtrack) - Download a [anime.thehylia](http://anime.thehylia.com/) soundtrack album at once. You may also generate a plain text file with direct links to mp3's instead.
 * [AES Encryption](AES-Encrypt) - Simple command-line tool to encrypt/decrypt strings.
+* [Calculate Hash](CalcHash) - command-line script to calculate hash (sha-256) of a list of files.
 
 
 #### Others
