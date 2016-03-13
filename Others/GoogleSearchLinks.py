@@ -3,7 +3,7 @@ import re
 from bs4 import BeautifulSoup
 
 
-def googleSearchLinks(search):
+def googleSearchLinks(search, re_match = None):
 	name = search
 	name  = name.replace(' ','+')
 	url = 'http://www.google.com/search?q=' + name
@@ -16,6 +16,10 @@ def googleSearchLinks(search):
 		link = h3.a['href']
 		link = re.sub(r'^.*?=', '', link, count=1) # prefixed over links \url=q?
 		link = re.sub(r'\&sa.*$', '', link, count=1) # suffixed google things
+		link = re.sub(r'\%.*$', '', link) # NOT SAFE
+		if re_match is not None:
+			if re.match(re_match, link, flags=re.IGNORECASE) is None:
+				continue
 		links.append(link) # link
 		#print(h3.get_text()) # text
 	return links
