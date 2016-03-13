@@ -17,6 +17,7 @@ Little python scripts I made to make my life easier.
 
 #### Others
 
+* [GoogleSearchLinks](Others/GoogleSearchLinks.py) - Function to returns links given by a Google search
 * [AudioVideoAutoMerge](Others/AudioVideoAutoMerge.py) - A very raw script to auto-merge all audio-video streams contained in a folder. It automatically detects pairs of audio-video files and merges them using *ffmpeg*.
 
 
